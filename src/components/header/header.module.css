@@ -23,7 +23,7 @@
   display: none;
   margin: 0;
   padding: 0;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .header li a {
@@ -47,7 +47,7 @@
   > .menuItem {
     opacity: 0.3;
   }
-  
+
   > .menuItem:hover {
     opacity: 1;
   }

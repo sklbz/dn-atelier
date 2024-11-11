@@ -1,13 +1,14 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$, Slot } from "@builder.io/qwik";
+import styles from "./gradient-button.module.css";
 
-export interface GradientButtonProps {
-  innerText?: string,
-}
-
-export const GradientButton = component$<GradientButtonProps>((props) => {
+export const GradientButton = component$(() => {
   return (
-    <button class="flex">
-      <Slot/>
-    </button>
+    <div class={styles.wrapper}>
+      <button class={styles.outerButton}>
+        <span class={[styles.innerButton]}>
+          <Slot />
+        </span>
+      </button>
+    </div>
   );
 });
