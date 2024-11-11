@@ -18,6 +18,8 @@
   --qwik-dirty-black: #1d2033;
   --qwik-dark-background: #151934;
   --qwik-dark-text: #ffffff;
+
+  --perspective: 100px;
 }
 
 html {
@@ -47,4 +49,5 @@ body {
   padding: 0;
   margin: 0;
   line-height: inherit;
+  perspective: var(--perspective);
 }

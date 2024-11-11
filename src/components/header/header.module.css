@@ -23,7 +23,7 @@
   display: none;
   margin: 0;
   padding: 0;
-  font-size: 0.7rem;
+  font-size: .9rem;
 }
 
 .header li a {
@@ -33,12 +33,22 @@
   text-decoration: none;
 }
 
-.header li a:hover {
-  color: var(--qwik-light-blue);
-}
-
 @media (min-width: 450px) {
   .header li {
     display: inline-block;
+  }
+}
+
+.menuItem {
+  transition: opacity 400ms ease;
+}
+
+.menu:hover {
+  > .menuItem {
+    opacity: 0.3;
+  }
+  
+  > .menuItem:hover {
+    opacity: 1;
   }
 }

@@ -23,7 +23,7 @@
       "@media/*": ["src/media/*"],
       "@routes/*": ["src/routes/*"],
       "@shop/*": ["src/routes/shop/*"],
-      "@icons/*": ["src/components/icons/*"],
+      "@icons/*": ["src/components/icons/*"]
     }
   },
   "files": ["./.eslintrc.cjs"],

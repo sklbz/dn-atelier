@@ -11,16 +11,13 @@ export default component$(() => {
             <Logo height={50} width={143} />
           </a>
         </div>
-        <ul>
-          <li>
-            <a
-              href="shop/"
-              target="_blank"
-            >
+        <ul class={styles.menu}>
+          <li class={styles.menuItem}>
+            <a href="shop/" target="_blank">
               Shop
             </a>
           </li>
-          <li>
+          <li class={styles.menuItem}>
             <a
               href="https://qwik.dev/examples/introduction/hello-world/"
               target="_blank"
@@ -28,7 +25,7 @@ export default component$(() => {
               Examples
             </a>
           </li>
-          <li>
+          <li class={styles.menuItem}>
             <a
               href="https://qwik.dev/tutorial/welcome/overview/"
               target="_blank"
