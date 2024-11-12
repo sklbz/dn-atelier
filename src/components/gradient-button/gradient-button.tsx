@@ -1,5 +1,5 @@
 import { component$, Slot } from "@builder.io/qwik";
-import styles from "./gradient-button.module.css";
+import styles from "./gradient-button.module.scss";
 
 export const GradientButton = component$(() => {
   return (
