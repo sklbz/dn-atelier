@@ -3,6 +3,8 @@ module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
+    stylelint: {},
+    "postcss-nested-vars": {},
     cssnano: {},
     "postcss-preset-env": {
       stage: 1,

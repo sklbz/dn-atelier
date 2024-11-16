@@ -7,6 +7,7 @@
 .logo {
   display: inline-block;
 }
+
 .logo a {
   display: block;
 }
@@ -38,6 +39,7 @@
     display: inline-block;
   }
 }
+
 
 .menuItem {
   transition: opacity 400ms ease;
