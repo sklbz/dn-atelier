@@ -40,8 +40,8 @@
   }
 }
 
-
 .menuItem {
+  background: $background;
   transition: opacity 400ms ease;
 }
 

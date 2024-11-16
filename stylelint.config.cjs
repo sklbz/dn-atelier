@@ -5,6 +5,6 @@ module.exports = {
     "stylelint-config-standard-scss"
   ],
   rules: {
-    "block-no-empty": true
+    "custom-property-pattern": null
   }
 };
