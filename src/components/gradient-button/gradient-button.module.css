@@ -14,27 +14,15 @@ $blue: hsl(193deg 77% 38%);
 .outerButton {
   padding: 1px;
   background: linear-gradient(
-    to bottom right,
+    115deg,
     $yellow,
     $light-green,
     $dark-green,
     $blue,
     $yellow
   );
-  background-size: 200%;
-  animation: background-pan 3s cubic-bezier() infinite;
-  transition: padding 250ms;
-}
-
-.innerButton {
-  display: block;
-  background-repeat: no-repeat;
-  padding: 20px 34px;
-  background-image: linear-gradient(to bottom right, transparent 50%, black 50% 60%, transparent 60% );
-  background-size: 1200% 2800%;
-  border-radius: 8px;
-  animation: slide-out 500ms ease 1 forwards;
-  transition: background-position 1s;
+  background-size: 100% 200%;
+  animation: background-pan 1s linear infinite;
 }
 
 @keyframes background-pan {
@@ -47,15 +35,23 @@ $blue: hsl(193deg 77% 38%);
   }
 }
 
-.outerButton:hover {
-  background-color: aliceblue;
+.innerButton {
+  display: block;
+  background-repeat: no-repeat;
+  padding: 20px 34px;
+  background-image: linear-gradient(to bottom right, transparent 33%, black 33% 67%, transparent 67% );
+  background-size: 400% 1000%;
+  border-radius: 8px;
+  animation: slide-out 500ms forwards;
+}
 
+.outerButton:hover {
   .innerButton {
-    animation: slide-in 300ms ease 1 forwards;
+    animation: slide-in 300ms cubic-bezier(.47,0,.74,.71) forwards;
   }
 }
 
-$midpoint: 75%;
+$midpoint: 60%;
 $endpoint: calc($midpoint * 2);
 
 @keyframes slide-in {
