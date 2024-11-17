@@ -6,10 +6,10 @@
   place-content: center;
 }
 
-$yellow: hsl(72, 72%, 75%);
-$light-green: hsl(110, 50%, 70%);
-$dark-green: hsl(162, 41%, 52%);
-$blue: hsl(193, 77%, 38%);
+$yellow: hsl(72deg 72% 75%);
+$light-green: hsl(110deg 50% 70%);
+$dark-green: hsl(162deg 41% 52%);
+$blue: hsl(193deg 77% 38%);
 
 .outerButton {
   padding: 1px;
@@ -30,8 +30,8 @@ $blue: hsl(193, 77%, 38%);
   display: block;
   background-repeat: no-repeat;
   padding: 20px 34px;
-  background-image: linear-gradient(to bottom right, transparent 50%, black 50% );
-  background-size: 300% 700%;
+  background-image: linear-gradient(to bottom right, transparent 50%, black 50% 60%, transparent 60% );
+  background-size: 1200% 2800%;
   border-radius: 8px;
   animation: slide-out 500ms ease 1 forwards;
   transition: background-position 1s;
@@ -41,36 +41,39 @@ $blue: hsl(193, 77%, 38%);
   from {
     background-position: 0% center;
   }
+
   to {
     background-position: 200% center;
   }
 }
 
 .outerButton:hover {
-  // padding: 3px;
-
   background-color: aliceblue;
+
   .innerButton {
     animation: slide-in 300ms ease 1 forwards;
   }
 }
 
+$midpoint: 75%;
+$endpoint: calc($midpoint * 2);
+
 @keyframes slide-in {
   from {
     background-position: 0% center;
   }
-  to {
 
-    background-position: 100% center;
+  to {
+    background-position: $midpoint center;
   }
 }
 
 @keyframes slide-out {
   from {
-    background-position: 100% center;
+    background-position: $midpoint center;
   }
-  to {
 
-    background-position: 200% center;
+  to {
+    background-position: $endpoint center;
   }
 }

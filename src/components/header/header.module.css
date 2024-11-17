@@ -34,14 +34,13 @@
   text-decoration: none;
 }
 
-@media (min-width: 450px) {
+@media (width > 450px) {
   .header li {
     display: inline-block;
   }
 }
 
 .menuItem {
-  background: $background;
   transition: opacity 400ms ease;
 }
 

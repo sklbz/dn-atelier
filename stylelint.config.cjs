@@ -1,10 +1,7 @@
 /** @type {import('stylelint').Config} */
 module.exports = {
-  extends: [
-    "stylelint-config-standard",
-    "stylelint-config-standard-scss"
-  ],
+  extends: "stylelint-config-standard",
   rules: {
-    "custom-property-pattern": null
+    "selector-class-pattern": null
   }
 };
