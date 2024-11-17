@@ -29,7 +29,7 @@
   "files": [
     "./.eslintrc.cjs",
     "./postcss.config.cjs",
-    "./stylelint.config.cjs"
+    "stylelint.config.mjs"
   ],
   "include": ["src", "./*.d.ts", "./*.config.ts"]
 }
