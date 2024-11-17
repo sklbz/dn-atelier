@@ -35,19 +35,24 @@ $blue: hsl(193deg 77% 38%);
   }
 }
 
+$sine: cubic-bezier(.47,0,.74,.71);
+$circular: cubic-bezier(.7, .18, .3, .82);
+
 .innerButton {
+  backdrop-filter: blur(10px);
   display: block;
   background-repeat: no-repeat;
   padding: 20px 34px;
   background-image: linear-gradient(to bottom right, transparent 33%, black 33% 67%, transparent 67% );
   background-size: 400% 1000%;
   border-radius: 8px;
-  animation: slide-out 500ms forwards;
+  animation: slide-out 500ms $circular forwards;
+  transition: background-position 1s;
 }
 
 .outerButton:hover {
   .innerButton {
-    animation: slide-in 300ms cubic-bezier(.47,0,.74,.71) forwards;
+    animation: slide-in 300ms $sine forwards;
   }
 }
 
