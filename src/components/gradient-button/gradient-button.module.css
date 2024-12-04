@@ -23,30 +23,31 @@ $blue: hsl(193deg 77% 38%);
   );
   background-size: 100% 200%;
   animation: background-pan 1s infinite;
-  transition: all 250ms;
 }
 
 @keyframes background-pan {
   from {
-    background-color: blue;
-    background-position: 0% center;
+    background-position-x: 0%;
   }
 
   to {
-    background-color: red;
-    background-position: 100% center;
+    background-position-x: 200%;
   }
 }
 
-$sine: cubic-bezier(.47,0,.74,.71);
-$circular: cubic-bezier(.7, .18, .3, .82);
+$sine: cubic-bezier(0.47, 0, 0.74, 0.71);
+$circular: cubic-bezier(0.7, 0.18, 0.3, 0.82);
 
 .innerButton {
-  backdrop-filter: blur(10px);
   display: block;
   background-repeat: no-repeat;
   padding: 20px 34px;
-  background-image: linear-gradient(to bottom right, transparent 33%, black 33% 67%, transparent 67% );
+  background-image: linear-gradient(
+    to bottom right,
+    transparent 33%,
+    black 33% 67%,
+    transparent 67%
+  );
   background-size: 400% 1000%;
   border-radius: 8px;
   animation: slide-out 500ms $circular forwards;

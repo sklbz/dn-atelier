@@ -6,7 +6,7 @@ module.exports = {
     "postcss-nested-vars": {},
     "postcss-preset-env": {
       stage: 1,
-      features: {}
+      features: {},
     },
     stylelint: {},
     tailwindcss: {},

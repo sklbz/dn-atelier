@@ -26,10 +26,6 @@
       "@icons/*": ["src/components/icons/*"]
     }
   },
-  "files": [
-    "./.eslintrc.cjs",
-    "./postcss.config.cjs",
-    "stylelint.config.mjs"
-  ],
+  "files": ["./.eslintrc.cjs", "./postcss.config.cjs", "stylelint.config.mjs"],
   "include": ["src", "./*.d.ts", "./*.config.ts"]
 }

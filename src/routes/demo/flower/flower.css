@@ -49,9 +49,8 @@ h1 {
   --luminance: calc(1 - calc(calc(var(--index) * var(--odd-color-step)) / 256));
 
   background: rgb(
-    calc(172 * var(--luminance))
-    calc(127 * var(--luminance))
-    calc(244 * var(--luminance))
+    calc(172 * var(--luminance)) calc(127 * var(--luminance))
+      calc(244 * var(--luminance))
   );
 }
 
